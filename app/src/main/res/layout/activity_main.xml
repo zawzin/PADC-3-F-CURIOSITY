@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.zzp.ass_curiosity.MainActivity">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:title="Curiosity"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curiosity"
+        android:foreground="@color/transparent_bg"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_policy"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/curiosity_ogo_icon_color"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="curiosity"
+            android:textColor="@color/curiosity_txt"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="Franklin Gothic"
+            />
+
+            <LinearLayout
+                android:id="@+id/ll_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@color/facebook_bg"
+                android:clickable="true"
+                android:foreground="@drawable/ripple_white"
+                >
+
+                <TextView
+                    android:id="@+id/tv_facebook"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="&#xf09a;"
+                    android:background="@color/transparent_black_30"
+                    android:gravity="center"
+                    android:textColor="@color/txt_white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="@string/sign_in_with_facebook"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_google"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@color/google_bg"
+                android:clickable="true"
+                android:foreground="@drawable/ripple_white">
+
+                <TextView
+                    android:id="@+id/tv_google"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/txt_white"
+                    android:textSize="20sp"
+                    android:text="&#xf1a0;"
+                    android:gravity="center"
+                    android:background="@color/transparent_black_30"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/sign_in_with_google"
+                    android:textColor="@color/txt_white"
+                    android:paddingLeft="12dp"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@color/twitter_bg"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_white">
+
+            <TextView
+                android:id="@+id/tv_twitter"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="&#xf099;"
+                android:textColor="@color/txt_white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/transparent_black_30"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/sign_in_with_Twitter"
+                android:textColor="@color/txt_white"
+                android:paddingLeft="12dp"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/ll_sign_up_with_email"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_bg"
+                android:clickable="true"
+                android:foreground="@drawable/ripple_white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_email_sign_up"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="&#xf003;"
+                        android:gravity="center"
+                        android:textColor="@color/txt_white"
+                        android:background="@color/transparent_black_10"
+                        android:src="@drawable/ic_email_24dp"
+                        />
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:orientation="vertical">
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:text="Sign Up"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginLeft="10dp"
+                          android:textColor="@color/txt_white"
+                          android:textSize="16sp"
+                          android:textStyle="bold"/>
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="With Email"
+                          android:textColor="@color/txt_white"
+                          android:textSize="12sp"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginBottom="5dp"/>
+
+                  </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_sign_in_with_email"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white_bg"
+                android:clickable="true"
+                android:foreground="@drawable/ripple_white">
+
+                <TextView
+                    android:id="@+id/tv_email_sign_in"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="&#xf003;"
+                    android:textColor="@color/txt_white"
+                    android:gravity="center"
+                    android:background="@color/transparent_black_10"
+                    android:src="@drawable/ic_email_24dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Sign In"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/txt_white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="With Email"
+                        android:textColor="@color/txt_white"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

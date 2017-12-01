@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent_bg">#40039BE5</color>
+    <color name="transparent_black_30">#4D000000</color>
+    <color name="curiosity_txt">#039BE5</color>
+    <color name="txt_white">#FFF</color>
+    <color name="facebook_bg">#4D2962FF</color>
+    <color name="google_bg">#CC0D47A1</color>
+    <color name="twitter_bg">#4D2979FF</color>
+    <color name="white_bg">#CCBDBDBD</color>
+    <color name="transparent_black_10">#1A000000</color>
+</resources>
